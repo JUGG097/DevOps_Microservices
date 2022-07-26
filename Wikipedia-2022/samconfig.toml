@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "Wikipedia-2022"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-rkbrrivrb58u"
+s3_prefix = "Wikipedia-2022"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=223633279067.dkr.ecr.us-east-1.amazonaws.com/wikipedia2022b9cec605/helloworldfunction19d43fc4repo"]
